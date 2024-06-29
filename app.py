@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-from utils import Data
-
 data = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
 
 mex_data = data[data['location'] == 'Mexico']
